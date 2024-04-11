@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1050px;
+    margin: auto;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-about{
+    display: flex;
+    margin: auto;
+}
+
+.header-about ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 25px;
+    padding: 30px 20px 10px 20px ;
+}
+
+.header-about ul li {
+    margin-left: 20px;
+}
+
+.about{
+    /*width: 80%;*/
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 10px 60px 10px;
+    /* overflow: hidden; */
+}
+
+.about-txt{
+    width: 40%;
+}
+
+.aboutTxt_h2 {
+    font-size: 44px;
+}
+
+.aboutTxt_h2 span {
+    display: block;
+}
+
+.about-img{
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    /*padding-left: 80px;*/
+}
+
+.about-img img {
+    align-items: center;
+}
+
+.about-resume{
+    font-size: 19px;
+    padding: 30px 10px 10px 10px;
+}
+
+.about-txt button{
+    border-radius: 2px;
+    border: none;
+    background-color: #FF6464;
+    color: white;
+    margin-top: 30px;
+    font-size: 20px;
+    width: 248px;
+    height: 48px;
+}
+
+.Posts{
+    width: 100%;
+    background-color: #EDF7FA;
+}
+
+.Posts-header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px 0;
+}
+
+
+
+.Posts-header a {
+    font-size: 16px;
+    padding-top: 10px;
+    text-align: center;
+    color: #00A8CC;
+    text-decoration: none   ;
+}
+
+.PostsBox{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 42%;
+    background-color: white;
+    /* margin-top: 30px; */
+    /* margin-bottom: 30px; */
+    padding: 30px 10px;
+}
+
+.box-txt{
+    /* font-size: 26px; */
+    /* padding: 20px 20px 10px; */
+}
+.box-title{
+    display: flex;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.box-title p:first-child {
+    border-right: 1px solid;
+    padding-right: 30px;
+}
+
+.box-title p:last-child {
+    padding-left: 30px;
+}
+
+.box p {
+    /* padding: 30px 30px 30px 40px; */
+    text-align: left;
+    font-size: 20px;
+}
+
+.works-{
+    width: 10%;
+    margin: auto;
+}
+
+.works-title{
+    /* padding: 20px 20px 20px 20px; */
+}
+
+.worksFlex {
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 25px 0;
+}
+
+.works-box{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+    gap: 18px;
+}
+
+.worksBox-img{
+    width: 60%;
+    height: 180px;
+
+}
+
+.worksBox-title{
+    /* padding-left: 10px; */
+}
+
+.works-box h2 {
+    font-size: 30px;
+}
+
+.work-p{
+    display: flex;
+    align-items: center;
+}
+
+.work-p button{
+    width: 62px;
+    height: 25px;
+    border-radius: 16px;
+    background-color: #142850;
+    color: white;
+    font-size: 18px;
+    margin: 20px 20px 20px 20px;
+}
+
+.work-p p {
+    color: #8695A4;
+    font-size: 20px;
+}
+
+.worksBox-txt{
+    font-size: 16px;
+    /* text-align: left; */
+}
+
+@media only screen and (min-width: 1050px){
+    .about-img img {
+        width: 400px;
+        height: 400px
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    .about-img img {
+        width: 300px;
+        height: 300px
+    }
+
+    .box-title p:first-child{
+        padding-right: 20px;
+    }
+    .box-title p:last-child {
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 851px){
+    .PostsBox{
+        width: 100%;
+    }
+    .worksFlex{
+        width: 91%;
+    }
+    .works-box{
+        width: 100%;
+    }
+    .box{
+        width: 47%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .about{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10px 0;
+    }
+    .about-txt{
+        width: 100%;
+        text-align: center;
+    }
+    .works-box{
+        flex-direction: column  ;
+        align-items: center;
+    }
+    .box{
+        width: 90%;
+        margin: auto;
+
+    }
+
+     .box{
+         margin: 20px 0;
+     }
+}
